@@ -8,25 +8,25 @@
 
 ## Быстрый старт
 1. Клонируйте репозиторий:
-
-	git clone <repo-url>
-
+```
+	git clone https://github.com/maksimlitvinov39kg/MLSD_Litvinov_AITH.git
+```
 2. Создайте виртуальное окружение и установите зависимости:
-
+```
 	python -m venv .venv
 	source .venv/bin/activate
 	pip install -r requirements.txt
-
+```
 3. (Опционально) Установите инструменты разработки (линтер/форматтер и pre-commit):
-
+```
 	pip install --upgrade pip
 	pip install ruff pre-commit
-
+```
 4. Активируйте хуки pre-commit:
-
+```
 	pre-commit install
 	pre-commit run --all-files
-
+```
 ## Конфигурация разработки
 В репозитории добавлены файлы конфигурации для автоматического форматирования и линтинга:
 
