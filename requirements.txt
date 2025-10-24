@@ -27,3 +27,8 @@ langchain_gigachat
 google-images-download
 selenium 
 webdriver-manager
+
+## Dev tools
+# linters / formatters / pre-commit hooks
+ruff>=0.0.0
+pre-commit>=3.4.0
