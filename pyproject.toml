@@ -1,0 +1,15 @@
+[tool.ruff]
+line-length = 88
+target-version = ["py310"]
+exclude = [".git", "__pycache__", "build", "dist", ".venv", "venv"]
+extend-ignore = ["E203", "W503"]
+
+[tool.ruff.format]
+# Let ruff handle import sorting and formatting rules compatible with black
+select = ["F", "E", "W", "C", "B", "I"]
+
+[tool.isort]
+profile = "black"
+
+[tool.black]
+line-length = 88
