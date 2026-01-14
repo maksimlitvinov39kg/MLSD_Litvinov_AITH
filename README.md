@@ -1,9 +1,10 @@
 # MLSD_Litvinov_AITH
 
 ## Demo
-<iframe src="https://drive.google.com/file/d/1RpuIViNcYc7VJHia77GYsXSAgNf8vTnw/preview" width="100%" height="480" allow="autoplay"></iframe>
-
-> **Если видео не работает в README**, перейдите пожалуйста на [Google Drive](https://drive.google.com/file/d/1RpuIViNcYc7VJHia77GYsXSAgNf8vTnw/view?usp=sharing)
+<video width="100%" controls>
+  <source src="assets/demo.mp4" type="video/mp4">
+  Ваш браузер не поддерживает тег video. Если видео не работает в README, перейдите на [Google Drive](https://drive.google.com/file/d/1RpuIViNcYc7VJHia77GYsXSAgNf8vTnw/view?usp=sharing)
+</video>
 
 ## Описание проекта
 Специализированный фреймворк для дообучения Vision-Language Model (VLM) с использованием LoRA (Low-Rank Adaptation) для улучшения описания русских культурных персонажей на изображениях. Проект включает полный пайплайн подготовки данных, обучения модели и оценки качества.
