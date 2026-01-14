@@ -1,40 +1,66 @@
 # MLSD_Litvinov_AITH
 
-Репозиторий проекта по ML System Design (курс/проект). Этот репозиторий содержит материалы, исследования и вспомогательные скрипты для выполнения заданий и разработки ML-систем.
+## Demo
+<video src="assets/demo.mov" width="100%" controls></video>
 
-## Содержание
-- `docs/` — дизайн системы и документация
-- `requirements.txt` — зависимости проекта
+## Описание проекта
+Специализированный фреймворк для дообучения Vision-Language Model (VLM) с использованием LoRA (Low-Rank Adaptation) для улучшения описания русских культурных персонажей на изображениях. Проект включает полный пайплайн подготовки данных, обучения модели и оценки качества.
+
+## Основные возможности
+- 📚 Полный фреймворк для LoRA дообучения VLM
+- 🖼️ Поддержка работы с изображениями русских персонажей (Алёша, Чебурашка, Гена, Колобок)
+- 🎨 Streamlit WebUI для демонстрации и тестирования
+- 📈 Документированные эксперименты и результаты
+
+## Структура проекта
+- `docs/` — ML System Design документация
+- `data/` — датасет изображений русских персонажей
+- `finetune_testing/` — тестирование и результаты дообучения
+- `service/` — Streamlit сервис для демонстрации
+- `train_qwen_with_lora.py` — основной скрипт для обучения
 
 ## Быстрый старт
 1. Клонируйте репозиторий:
+```bash
+git clone https://github.com/maksimlitvinov39kg/MLSD_Litvinov_AITH.git
+cd MLSD_Litvinov_AITH
 ```
-	git clone https://github.com/maksimlitvinov39kg/MLSD_Litvinov_AITH.git
-```
+
 2. Создайте виртуальное окружение и установите зависимости:
+```bash
+python -m venv .venv
+source .venv/bin/activate  # На Windows: .venv\Scripts\activate
+pip install -r requirements.txt
 ```
-	python -m venv .venv
-	source .venv/bin/activate
-	pip install -r requirements.txt
+
+3. Запустите сервис (опционально):
+```bash
+cd service
+streamlit run app.py
 ```
-3. (Опционально) Установите инструменты разработки (линтер/форматтер и pre-commit):
+
+4. (Опционально) Установите инструменты разработки (линтер/форматтер и pre-commit):
+```bash
+pip install --upgrade pip
+pip install ruff pre-commit
+pre-commit install
+pre-commit run --all-files
 ```
-	pip install --upgrade pip
-	pip install ruff pre-commit
-```
-4. Активируйте хуки pre-commit:
-```
-	pre-commit install
-	pre-commit run --all-files
-```
+
+## Требования к окружению
+- Python 3.10+
+- GPU рекомендуется (CUDA 11.8+)
+- Зависимости указаны в `requirements.txt`
+
 ## Конфигурация разработки
-В репозитории добавлены файлы конфигурации для автоматического форматирования и линтинга:
+В репозитории используются:
+- `pyproject.toml` — конфигурация для ruff (линтер/форматтер)
+- `.pre-commit-config.yaml` — автоматические проверки перед коммитом
 
-- `pyproject.toml` — конфигурация для ruff (линтер/форматтер).
-- `.pre-commit-config.yaml` — хуки pre-commit (ruf, базовые проверки YAML, удаление пробелов и т.д.).
-
-Используйте `ruff` для проверки/исправления кода и `pre-commit` для автозапуска этих проверок перед коммитом.
+## Результаты
+Результаты дообучения и тестирования доступны в `finetune_testing/` с детальными метриками и сравнением.
 
 ## Контакты
+Автор: Maksim Litvinov
 Автор: Maksim Litvinov
 
