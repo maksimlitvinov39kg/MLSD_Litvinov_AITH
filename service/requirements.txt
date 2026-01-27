@@ -1,0 +1,7 @@
+streamlit>=1.28.0
+torch>=2.0.0
+transformers>=4.37.0
+peft>=0.8.0
+accelerate>=0.25.0
+pillow>=9.5.0
+qwen-vl-utils==0.0.8
